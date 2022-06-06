@@ -18,6 +18,8 @@ class AuthModel {
    * @param email
    * @returns {Promise<*>}
    */
+
+
   static async getUserByEmail(email) {
     const result = await connection
       .promise()

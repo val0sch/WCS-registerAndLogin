@@ -4,6 +4,7 @@ const bcrypt = require("bcrypt");
 
 class AuthController {
   // https://developer.mozilla.org/fr/docs/Web/JavaScript/Reference/Classes/static
+  //static : il n'y aura que la class AuthController qui peut accéder à register
   static async register(req, res) {
     try {
       const { email, password } = req.body;
